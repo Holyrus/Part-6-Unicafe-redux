@@ -1,7 +1,14 @@
+// npm install --save-dev jest @babel/preset-env @babel/preset-react eslint-plugin-jest
+// Create file .babelrc and fill with particular content
+// Expand package.json with new "scripts": {/... "test": "jest"}
+// Add to .eslintrc.cjs - env: {/... "jest/globals": true}
+// npm install --save-dev deep-freeze
+
+
 import deepFreeze from 'deep-freeze'
 import counterReducer from './reducer'
 
-describe('unicafe reducer', () => {
+describe('Unicafe Reducer', () => {
   const initialState = {
     good: 0,
     ok: 0,
