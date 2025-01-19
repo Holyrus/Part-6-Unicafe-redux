@@ -39,4 +39,23 @@ describe('Unicafe Reducer', () => {
       bad: 0
     })
   })
+
+  test('Stats resets', () => {
+    const newInitialState = {
+      good: 5,
+      ok: 3,
+      bad: 2
+    }
+    const action = {
+      type: 'ZERO'
+    }
+    const state = newInitialState
+    deepFreeze(state)
+    const newState = counterReducer(state, action)
+    expect(newState).toEqual({
+      good: 0,
+      ok: 0,
+      bad: 0
+    })
+  })
 })
