@@ -3,6 +3,7 @@
 // Expand package.json with new "scripts": {/... "test": "jest"}
 // Add to .eslintrc.cjs - env: {/... "jest/globals": true}
 // npm install --save-dev deep-freeze
+// npm install react-redux -> For moving App component into its ows file App.jsx
 
 
 import deepFreeze from 'deep-freeze'
